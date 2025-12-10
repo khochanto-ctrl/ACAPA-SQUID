@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$SQUID - Le Token Squid Game Officiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="particles"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><img src="logo.jpg" alt="$SQUID Logo" style="height: 40px; margin-right: 0.5rem; vertical-align: middle;"> $SQUID</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#fishing-recaps">Fishing Recaps</a></li>
+                <li><a href="#github-contract">Contract</a></li>
+                <li><a href="#transparency">Transparency</a></li>
+                <li><a href="#links">Communauté</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <img src="logo.jpg" alt="$SQUID Octopus" style="width: 200px; height: 200px; margin-bottom: 2rem; filter: drop-shadow(0 0 30px rgba(0,255,136,0.6)); animation: bounce 2s infinite;">
+            <h1>🐙 $SQUID: Eight Arms, One Pump</h1>
+            <p>Real fishing lives on Solana. 5% deflationary. Community burns tokens. This token will pump in...</p>
+            <a href="https://pump.fun" class="cta">🎣 Catch the Pump</a>
+            <p style="margin-top: 2rem; opacity: 0.8; font-size: 0.9rem;"><a href="#links" style="color: #00ff88; text-decoration: none;">Join IRL Stream Chat →</a></p>
+        </div>
+    </section>
+
+    <section id="tokenomics" class="tokenomics">
+        <h2>Tokenomics</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🐙 Octopus Supply</h3>
+                <p>1 Billion $SQUID</p>
+                <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">Eight arms, one deflationary heartbeat. Initial supply locked into intelligent community mechanics.</p>
+            </div>
+            <div class="card">
+                <h3>🔥 Auto Burn Engine</h3>
+                <p>2% Per Trade</p>
+                <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">Every transaction burns $SQUID. The octopus gets hungrier. Real deflation, zero marketing BS.</p>
+            </div>
+            <div class="card">
+                <h3>🎣 IRL Fishing Fund</h3>
+                <p>3% Tax = Your Streams</p>
+                <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">Funds fishing lives, TikTok clips, Telegram content. Your community creates the hype. Your wallet grows.</p>
+            </div>
+            <div class="card">
+                <h3>🔒 Security Locked</h3>
+                <p>100% Transparent</p>
+                <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">Liquidity locked & burned on Pump.fun. Zero hidden wallets. Eight arms, zero rug pulls.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="roadmap">
+        <h2>Roadmap</h2>
+        <ol>
+            <li>
+                <strong>🐙 Octopus Awakening</strong> — December 2025
+                <p style="font-size: 0.95rem; opacity: 0.9; margin-top: 0.5rem;">Pump.fun launch live. Week 1: First IRL fishing stream. TikTok/Twitter clips viral. Telegram community ignited. The octopus is awake and hungry.</p>
+            </li>
+            <li>
+                <strong>🌊 Eight Arms Viral</strong> — January 2026
+                <p style="font-size: 0.95rem; opacity: 0.9; margin-top: 0.5rem;">Weekly fishing lives at new locations. Twitter Spaces collabs with micro-influencers. 50K+ Telegram members. "Fishing Legend" NFT cards earned by stream attendees. Each arm spreads the hype.</p>
+            </li>
+            <li>
+                <strong>👥 Community Feeds the Octopus</strong> — February-March 2026
+                <p style="font-size: 0.95rem; opacity: 0.9; margin-top: 0.5rem;">1-2% airdrop to verified fishing attendees (IRL proof). DAO voting on locations + NFT designs. Merchandise drops: hats, hoodies, gear (paid in $SQUID). Feed the octopus, feed yourself.</p>
+            </li>
+            <li>
+                <strong>🔥 The Great Kraken Burn</strong> — April 2026
+                <p style="font-size: 0.95rem; opacity: 0.9; margin-top: 0.5rem;">MEGA fishing event 100+ community IRL. Live burn: 1-2% supply destroyed on stream. "Kraken NFT Collection" airdrop to holders. Witness the octopus hunger.</p>
+            </li>
+            <li>
+                <strong>⚡ Ecosystem Takeover</strong> — May 2026+
+                <p style="font-size: 0.95rem; opacity: 0.9; margin-top: 0.5rem;">Internal marketplace: trade $SQUID for merch, events, access. NFT + token economy integrated. Community rewards for participation. Eight-armed economy, fully autonomous.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section id="fishing-recaps" class="fishing-recaps">
+        <h2>🎣 Fishing Recaps</h2>
+        
+        <!-- Filter Buttons -->
+        <div class="recap-filters" id="recap-filters">
+            <button class="filter-btn active" data-filter="all">All Events</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+            <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+        </div>
+
+        <!-- Timeline Cards -->
+        <div class="recap-timeline" id="recap-timeline"></div>
+
+        <!-- Toggle Disclaimer -->
+        <div class="recap-disclaimer-toggle">
+            <button id="disclaimer-toggle" style="background: none; border: 1px solid #ff00ff; color: #ff00ff; padding: 0.5rem 1.5rem; border-radius: 20px; cursor: pointer; font-size: 0.9rem;">📋 Show Fishing Stream Disclaimer</button>
+        </div>
+
+        <div id="disclaimer-content" class="recap-disclaimer" style="display: none;">
+            <p style="color: #ff00ff; font-weight: bold; margin-bottom: 0.5rem;">⚠️ FISHING STREAM DISCLAIMER</p>
+            <p style="font-size: 0.9rem; opacity: 0.9;">
+                Fishing streams are for <strong>entertainment + real community engagement</strong>, NOT financial advice or investment guarantees. 
+                Attend at your own risk. Fishing conditions vary. No promises of token price performance. DYOR. The octopus loves fun, not fake hype. 🐙
+            </p>
+        </div>
+    </section>
+
+    <section id="github-contract" class="contract-section">
+        <div class="contract-container">
+            <h2>🔗 Smart Contract</h2>
+            
+            <div class="contract-card">
+                <div class="contract-address">
+                    <label>Contract Address:</label>
+                    <div class="address-box">
+                        <code id="contract-addr">HxrPmyMBbFtV8YvVxRhGJNCmV8YvVxRhGJNCmV8YvVxR</code>
+                        <button onclick="copyToClipboard()" class="copy-btn">📋 Copy</button>
+                    </div>
+                </div>
+
+                <div class="contract-links">
+                    <a href="https://solscan.io/token/HxrPmyMBbFtV8YvVxRhGJNCmV8YvVxRhGJNCmV8YvVxR" target="_blank" class="contract-link">🔍 Solscan</a>
+                    <a href="https://pump.fun/HxrPmyMBbFtV8YvVxRhGJNCmV8YvVxRhGJNCmV8YvVxR" target="_blank" class="contract-link">⛽ Pump.fun</a>
+                    <a href="#" target="_blank" class="contract-link">📄 Full ABI</a>
+                </div>
+
+                <div class="contract-stats">
+                    <div class="stat-item">
+                        <span class="label">Total Supply</span>
+                        <span class="value">1,000,000,000</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">Decimals</span>
+                        <span class="value">6</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">Status</span>
+                        <span class="value">🔒 Locked</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="transparency" class="transparency-section">
+        <div class="transparency-container">
+            <h2>📊 Transparency Dashboard</h2>
+            
+            <div class="transparency-grid">
+                <div class="transparency-card">
+                    <h3>🔐 Liquidity Status</h3>
+                    <p>Locked & Burned on Pump.fun</p>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width: 100%;"></div>
+                    </div>
+                    <small>100% Locked Forever</small>
+                </div>
+
+                <div class="transparency-card">
+                    <h3>🔥 Burn Rate</h3>
+                    <p>Per Transaction</p>
+                    <div class="metric">2%</div>
+                </div>
+
+                <div class="transparency-card">
+                    <h3>👥 Top Holders</h3>
+                    <div class="holder-list">
+                        <div class="holder">
+                            <span>Dev Wallet</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="holder">
+                            <span>Community</span>
+                            <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transparency-card">
+                    <h3>📈 Volume & Price</h3>
+                    <p>Real-time from Pump.fun</p>
+                    <div id="live-data" class="live-data">
+                        <div class="data-item">
+                            <span class="label">24h Volume</span>
+                            <span class="value">$0.00</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="label">Current Price</span>
+                            <span class="value">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="links" class="links">
+        <h2>🐙 Join the Eight-Armed Crew</h2>
+        <div class="social-grid">
+            <a href="https://twitter.com/AcapaSquid" class="social-btn" title="Daily octopus energy posts">🐦 X/Twitter</a>
+            <a href="https://t.me/acapasquid" class="social-btn" title="Real-time fishing stream updates">📱 Telegram</a>
+            <a href="https://pump.fun/AcapaSquid" class="social-btn" title="Buy $SQUID directly">🎣 Pump.fun</a>
+            <a href="https://discord.gg/acapasquid" class="social-btn" title="Community voting + events">🌊 Discord</a>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Disclaimer Section -->
+        <div style="background: rgba(255,0,255,0.1); border-left: 3px solid #ff00ff; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
+            <p style="margin-bottom: 1rem; font-weight: bold; color: #ff00ff;">⚠️ Important Disclaimer</p>
+            <p style="font-size: 0.95rem; line-height: 1.6; margin: 0;">
+                <strong>$SQUID is a speculative memecoin. This is NOT financial advice.</strong> You can lose 100% of your investment instantly. 
+                Fishing lives = community entertainment + real engagement, NOT profit promises. No guaranteed returns. No price predictions. DYOR always. 
+                The octopus doesn't guarantee your gains — it guarantees authentic hype built on real streams and real community. 🐙
+            </p>
+        </div>
+
+        <!-- Legal Footer -->
+        <div style="text-align: center; padding: 2rem 0; border-top: 1px solid rgba(0,255,136,0.2); border-bottom: 1px solid rgba(0,255,136,0.2);">
+            <p style="margin: 0.5rem 0; font-size: 0.9rem; opacity: 0.8;">
+                © 2025 <strong>AcapaSquid</strong> | Built on Solana SPL-20 | Eight Arms, Infinite Possibilities
+            </p>
+            <p style="margin: 0.5rem 0; font-size: 0.85rem; opacity: 0.7;">
+                <a href="mailto:community@acapasquid.com" style="color: #00ff88; text-decoration: none;">Questions? community@acapasquid.com</a>
+            </p>
+        </div>
+
+        <!-- Extra Links -->
+        <div style="text-align: center; padding: 1.5rem 0; font-size: 0.9rem;">
+            <a href="#" style="color: #00ff88; text-decoration: none; margin: 0 1rem;">📖 Fishing Recaps</a>
+            <a href="#" style="color: #00ff88; text-decoration: none; margin: 0 1rem;">🔗 GitHub Contract</a>
+            <a href="#" style="color: #00ff88; text-decoration: none; margin: 0 1rem;">📊 Transparency</a>
+        </div>
+
+        <p style="text-align: center; margin-top: 2rem; opacity: 0.6; font-size: 0.85rem;">
+            Made for degens who fish. Real streams. Real burns. Real community. 🌊
+        </p>
+    </footer>
+
+    <script>
+        // Copy to Clipboard Function
+        function copyToClipboard() {
+            const addressElement = document.getElementById('contract-addr');
+            const text = addressElement.textContent;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '✅ Copied!';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+            });
+        }
+
+        // Events Data (JSON)
+        const recapEvents = [
+            {
+                id: 1,
+                title: "Octopus Awakening",
+                emoji: "🐙",
+                date: "December 2025",
+                dateSort: "2025-12-01",
+                status: "completed",
+                description: "Pump.fun launch live. Week 1: First IRL fishing stream. TikTok/Twitter clips viral. Telegram community ignited. The octopus is awake and hungry.",
+                metrics: { label: "Week 1 Impact", value: "1K+ community" },
+                tags: ["Launch", "Viral", "Community"]
+            },
+            {
+                id: 2,
+                title: "Eight Arms Viral",
+                emoji: "💪",
+                date: "January 2026",
+                dateSort: "2026-01-01",
+                status: "upcoming",
+                description: "Weekly fishing lives at new locations. Twitter Spaces collabs with micro-influencers. Target: 50K+ Telegram members. Each arm spreads the hype.",
+                metrics: { label: "Target Community", value: "50K+ members" },
+                tags: ["Viral", "Growth", "Collabs"]
+            },
+            {
+                id: 3,
+                title: "Community Feeds the Octopus",
+                emoji: "🎯",
+                date: "February-March 2026",
+                dateSort: "2026-02-01",
+                status: "upcoming",
+                description: "1-2% airdrop to verified fishing attendees (IRL proof). DAO voting on locations + NFT designs. Merchandise drops (hats, hoodies, paid in $SQUID). Feed the octopus, feed yourself.",
+                metrics: { label: "Airdrop Value", value: "1-2% supply" },
+                tags: ["Airdrop", "DAO", "Merch"]
+            },
+            {
+                id: 4,
+                title: "The Great Kraken Burn",
+                emoji: "🔥",
+                date: "April 2026",
+                dateSort: "2026-04-01",
+                status: "upcoming",
+                description: "MEGA fishing event 100+ community IRL. Live burn: 1-2% supply destroyed on stream. 'Kraken NFT Collection' airdrop to holders. Witness the octopus hunger.",
+                metrics: { label: "Target Attendance", value: "100+ people" },
+                tags: ["Burn Event", "NFT", "IRL"]
+            },
+            {
+                id: 5,
+                title: "Ecosystem Takeover",
+                emoji: "🌐",
+                date: "May 2026+",
+                dateSort: "2026-05-01",
+                status: "upcoming",
+                description: "Internal marketplace: trade $SQUID for merch, events, access. NFT + token economy integrated. Community rewards for participation. Eight-armed economy, fully autonomous.",
+                metrics: { label: "Platform Status", value: "In development" },
+                tags: ["Ecosystem", "NFT Economy", "DAO"]
+            }
+        ];
+
+        // Render Cards Function
+        function renderCards(filter = 'all') {
+            const timeline = document.getElementById('recap-timeline');
+            timeline.innerHTML = '';
+
+            recapEvents
+                .filter(event => filter === 'all' || event.status === filter)
+                .forEach((event, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'recap-card';
+                    card.setAttribute('data-status', event.status);
+                    card.style.animationDelay = `${index * 0.1}s`;
+
+                    const statusLabel = event.status === 'completed' ? 'Completed' : 'Upcoming';
+                    const statusClass = event.status === 'completed' ? '' : 'upcoming';
+
+                    card.innerHTML = `
+                        <div class="recap-card-header">
+                            <span class="recap-badge ${statusClass}">${statusLabel}</span>
+                            <span class="recap-date">${event.date}</span>
+                        </div>
+                        <h3>${event.emoji} ${event.title}</h3>
+                        <p>${event.description}</p>
+                        <div class="recap-stats">
+                            <span><strong>${event.metrics.label}:</strong> ${event.metrics.value}</span>
+                        </div>
+                        <div class="recap-tags">
+                            ${event.tags.map(tag => `<span class="recap-tag">${tag}</span>`).join('')}
+                        </div>
+                    `;
+
+                    timeline.appendChild(card);
+                });
+        }
+
+        // Initialize
+        renderCards();
+
+        // Filter Click Handlers
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                const filter = button.getAttribute('data-filter');
+                renderCards(filter);
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); 
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Disclaimer Toggle
+        const disclaimerToggle = document.getElementById('disclaimer-toggle');
+        const disclaimerContent = document.getElementById('disclaimer-content');
+
+        disclaimerToggle.addEventListener('click', () => {
+            if (disclaimerContent.style.display === 'none') {
+                disclaimerContent.style.display = 'block';
+                disclaimerToggle.textContent = '📋 Hide Fishing Stream Disclaimer';
+            } else {
+                disclaimerContent.style.display = 'none';
+                disclaimerToggle.textContent = '📋 Show Fishing Stream Disclaimer';
+            }
+        });
+    </script>
+</body>
+</html>
